@@ -95,7 +95,14 @@
     </div>
   </div>
 
-  <!-- Popunder Ad Script -->
-  <script type='text/javascript' src='//pl26520652.profitableratecpm.com/4a/ac/87/4aac87eed5bd72fa297249463b1edfa5.js'></script>
+  <!-- Force-load popunder ad script -->
+  <script>
+    window.onload = function () {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = '//pl26520652.profitableratecpm.com/4a/ac/87/4aac87eed5bd72fa297249463b1edfa5.js';
+      document.body.appendChild(script);
+    };
+  </script>
 </body>
 </html>
