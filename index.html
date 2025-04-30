@@ -95,14 +95,14 @@
     </div>
   </div>
 
-  <!-- Force-load popunder ad script -->
+  <!-- Trigger ad script when user clicks -->
   <script>
-    window.onload = function () {
+    document.querySelector('.cta a').addEventListener('click', function() {
       var script = document.createElement('script');
       script.type = 'text/javascript';
       script.src = '//pl26520652.profitableratecpm.com/4a/ac/87/4aac87eed5bd72fa297249463b1edfa5.js';
       document.body.appendChild(script);
-    };
+    });
   </script>
 </body>
 </html>
